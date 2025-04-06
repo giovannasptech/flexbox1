@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula CSS - 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>body {
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #212427
+}
+
+h1 {
+    width: fit-content;
+    margin: auto;
+}
+
+.caixa {
+    border-radius: 5px;
+}
+
+.pai {
+    width: 16%;
+    height: 350px;
+    margin: auto;
+    background-color: antiquewhite;
+    border: solid 2px #212427;
+    margin-left: 190px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    
+}
+
+.filho {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.cor1 {
+    background-color: #ED145B;
+
+
+
+}
+
+.cor2 {
+    background-color: #63B1BC;
+    order: 2;
+    align-self: last baseline;
+}
+
+.cor3 {
+    background-color: #EFB661;
+    align-self: center;
+}
+
+
+.instrucoes {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+.footer {
+    background-color: antiquewhite;
+    height: 130px;
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+img {
+    width: 20%;
+}
+</style>
+<body>
+    <h1>Aula flex-box</h1>
+    <div class="caixa pai">
+        <div class="caixa filho cor1">1</div>
+        <div class="caixa filho cor2">2</div>
+        <div class="caixa filho cor3">3</div>
+    </div>
+
+    <div class="instrucoes">
+        <h2>Testando comandos de estilo:</h2>
+        <p><em>Adicione os estilos abaixo no código-fonte e veja o que acontece com os elementos.</em></p>
+        <ol>
+            <li>
+                Altere a propriedade <span><strong>justify-content</strong></span> modificando o valor para <span><strong>flex-end</strong></span> (era "flex-start");
+            </li>
+            <li>
+                Altere a propriedade <span><strong>justify-content</strong></span> modificando o valor para <span><strong>space-between</strong></span>;
+            </li>
+            <li>
+                Altere a propriedade <span><strong>justify-content</strong></span> modificando o valor para <span><strong>center</strong></span>;
+            </li>
+            <li>
+                Altere a propriedade <span><strong>align-items</strong></span> modificando o valor para <span><strong>flex-end</strong></span>  (era "flex-start");
+            </li>
+            <li>
+                Altere a propriedade <span><strong>align-items</strong></span> modificando o valor para <span><strong>center</strong></span>;
+            </li>
+            <li>
+                Altere a propriedade <span><strong>flex-direction</strong></span> modificando o valor para <span><strong>column</strong></span> (era "row");
+            </li>
+        </ol>
+        <h2>Agora é com você!</h2>
+        <p><em>Desafio: como será que eu faço para deixar os elementos da maneira abaixo?</em></p>
+        <p><img src="atividade-desafio.png" alt="imagem do desafio"></p>
+        
+    </div>
+    <div class="footer">
+        <p>Quer saber mais sobre o Layout com Flexbox? Acesse: </p>
+
+        <p>
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Artigo CSS-Tricks</a> </p>
+        <p>
+            <a href="https://www.alura.com.br/artigos/css-guia-do-flexbox?srsltid=AfmBOoqPsvlW82tLY-uoiTL9slZrjS_SuoYydlb82z3H0lDT4Y1jCXDu">Artigo Alura</a> </p>
+
+    </div>
+</body>
+</html>
